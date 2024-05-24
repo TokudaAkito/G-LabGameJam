@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeManager : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
-    public static float currentTime = 180f;
+    public float currentTime = 180f;
     [SerializeField] private Text timertext;
 
     void Update()
