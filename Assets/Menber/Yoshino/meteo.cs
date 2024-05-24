@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class meteo : MonoBehaviour
 {
+    [SerializeField] float posy=-10;
     // Start is called before the first frame update
     [SerializeField] GameObject Player;
     [SerializeField] PlayerScript pl;
@@ -17,6 +18,10 @@ public class meteo : MonoBehaviour
     void Update()
     {
         
+        if (this.transform.position.y < posy) 
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
