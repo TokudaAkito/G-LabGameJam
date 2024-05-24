@@ -9,9 +9,10 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private TimeManager timeManager;
+    //private Player player;
 
     private bool finished;
-
+    private bool gameovered;
     void Start()
     {
 
@@ -21,11 +22,21 @@ public class GameManager : MonoBehaviour
     {
         finished = true;
     }
+    public void GameOver()
+    {
+        gameovered = true;
+        SceneManager.LoadScene("GameoverScene");
+    }
 
     //@ƒQ[ƒ€‚ğI—¹‚µ‚½‚©‚Ç‚¤‚©
     public bool IsFinished()
     {
         return finished;
+    }
+
+    public bool GameOvered()
+    {
+        return gameovered;
     }
 
 }

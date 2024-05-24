@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class TimeManager : MonoBehaviour
         if (currentTime < 0)
         {
             gameManager.Goal();
+            SceneManager.LoadScene("");
         }
 
     }
