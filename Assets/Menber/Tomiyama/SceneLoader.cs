@@ -7,8 +7,15 @@ using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
+    static SceneLoader _instance;
+    public static SceneLoader Instance => _instance;
+
     [SerializeField] private Image _image = null;
 
+    private void Awake()
+    {
+        _instance = this;
+    }
 
     private void Start()
     {
