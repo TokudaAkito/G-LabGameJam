@@ -9,12 +9,23 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private TimeManager timeManager;
+    [SerializeField]
+    private PlayerScript player ;
     //private Player player;
 
     private bool finished;
     private bool gameovered;
     void Start()
     {
+        
+    }
+
+    private void Update()
+    {
+        if (player.HP <= 0)
+        {
+            GameOver();
+        }
 
     }
 
