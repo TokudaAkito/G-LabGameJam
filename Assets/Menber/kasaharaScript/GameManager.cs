@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private TimeManager timeManager;
     [SerializeField]
-    private PlayerScript player ;
+    private HealthSystem health ;
     //private Player player;
 
     private bool finished;
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (player.HP <= 0)
+        if (health.life <= 0)
         {
             GameOver();
         }

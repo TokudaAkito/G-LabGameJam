@@ -16,7 +16,6 @@ public class TimeManager : MonoBehaviour
         {
             currentTime -= Time.deltaTime;
             timertext.text =currentTime.ToString("0.0");
-            Debug.Log(currentTime);
         }
         if (currentTime < 0 && !gameManager.GameOvered())
         {
