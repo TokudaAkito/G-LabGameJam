@@ -9,9 +9,11 @@ public class ItemGet : MonoBehaviour
     [SerializeField] float _speedUpTimer;
 
     PlayerMove playerMove;
+    public int count = 0;
     // Start is called before the first frame update
     void Start()
     {
+        count = 0;
         playerMove = GetComponent<PlayerMove>();
     }
 
@@ -35,7 +37,7 @@ public class ItemGet : MonoBehaviour
         if (collision.gameObject.tag == "speedup")
         {
             GetSpeedUp();
-          
+           _speedUpTimer = 0;
           
 
         }
@@ -61,6 +63,7 @@ public class ItemGet : MonoBehaviour
         void GetBullet()
         {
             Debug.Log("bulletget");
+            count++;
         }
 
     }

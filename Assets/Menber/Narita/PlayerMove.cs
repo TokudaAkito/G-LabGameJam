@@ -8,12 +8,13 @@ public class PlayerMove : MonoBehaviour
     float _speed = 1f;
     [SerializeField] float _maxrange;
     [SerializeField] float _speedup = 1f;
-
+    [SerializeField] GameObject _speedUpImage;
     public bool _isSpeedUp;
     // Start is called before the first frame update
     void Start()
     {
         _speed = _startSpeed;
+        _speedUpImage.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,21 +24,23 @@ public class PlayerMove : MonoBehaviour
         {
             transform.position += transform.right * -_speed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.D) && this.transform.position.x < _maxrange) 
+        if (Input.GetKey(KeyCode.D) && this.transform.position.x < _maxrange)
         {
-            transform .position += transform.right * _speed * Time.deltaTime;
+            transform.position += transform.right * _speed * Time.deltaTime;
         }
     }
 
     public void SpeedUp()
     {
-        _speed += _speedup;
+        _speed = _speedup;
         _isSpeedUp = true;
+        _speedUpImage?.SetActive(true);
     }
 
     public void SpeedReset()
     {
         _speed = _startSpeed;
         _isSpeedUp = false;
+        _speedUpImage?.SetActive(false);
     }
 }
