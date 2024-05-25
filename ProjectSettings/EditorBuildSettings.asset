@@ -5,10 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sample/Scenes/2DSample.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Game/Scenes/TItleScene.unity
+    guid: 04240b92d35a91141a6a7e01392e81fa
+  - enabled: 1
+    path: Assets/Menber/kasaharaScript/InGame.unity
+    guid: edf56c809506f3041846f661a25f8e3e
+  - enabled: 1
     path: Assets/Game/Scenes/GameoverScene.unity
     guid: 478088b1b99164b4cb3a1dc2bd652383
+  - enabled: 1
+    path: Assets/Game/Scenes/ClearScene.unity
+    guid: 1d101d27c5408444593f8c0513a2e8c9
   m_configObjects: {}
