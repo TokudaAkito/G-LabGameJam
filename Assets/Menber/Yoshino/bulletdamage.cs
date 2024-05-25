@@ -28,6 +28,7 @@ public class bulletdamage : MonoBehaviour
         {
 
             //e_hpBar.enemylife--;
+            Destroy(this);
         }
         
     }
