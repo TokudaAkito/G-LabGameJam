@@ -9,11 +9,11 @@ public class ItemGet : MonoBehaviour
     [SerializeField] float _speedUpTimer;
     bullet bullet;
     PlayerMove playerMove;
+    [Header("ëùÇ¶ÇÈíeêî")]
     public int count = 0;
     // Start is called before the first frame update
     void Start()
     {
-        count = 0;
         bullet = GetComponent<bullet>();
         playerMove = GetComponent<PlayerMove>();
     }
@@ -35,21 +35,24 @@ public class ItemGet : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "speedup")
+       /* if (collision.gameObject.tag == "speedup")
         {
             GetSpeedUp();
            _speedUpTimer = 0;
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "powerup")
         {
             GetPowerUp();
-        }
+            Destroy(collision.gameObject);
+        }*/
         if (collision.gameObject.tag == "bullet")
         {
             GetBullet();
+            Destroy(collision.gameObject);
         }
 
-        void GetSpeedUp()
+       /* void GetSpeedUp()
         {
             Debug.Log("speedup");
             playerMove.SpeedUp();
@@ -57,12 +60,13 @@ public class ItemGet : MonoBehaviour
         void GetPowerUp()
         {
             Debug.Log("powerup");
-        }
+        }*/
         void GetBullet()
         {
-            bullet.count2 = count;
+           // bullet.count2 = count;
             Debug.Log("bulletget");
-            count++;
+            // count++;
+            bullet.AddBullet(count);
         }
 
     }
