@@ -23,7 +23,7 @@ public class SceneLoader : MonoBehaviour
     }
     private IEnumerator AlphaZeroToOne(float d, Action on_completed, bool isReversing = false)
     {
-        if (!isReversing) _image.enabled = true;
+        _image.enabled = true;
 
         var elapsedTime = 0.0f;
         var color = _image.color;
@@ -36,7 +36,7 @@ public class SceneLoader : MonoBehaviour
             elapsedTime += Time.deltaTime;
            _image.color = color;
         }
-        if (isReversing ) _image.enabled = false;
+        _image.enabled = false;
         if (on_completed != null) on_completed();
     }
 
@@ -63,6 +63,7 @@ public class SceneLoader : MonoBehaviour
     public void MoveToOtherScene(string sceneName)
     {
         StartCoroutine(WaitAndFadeIn(0.3f, 1.5f, sceneName));
+        //SceneLoader.Instance.MoveToOtherScene(シーン名)で、フェードインしたのちシーンの移動を行う。
     }
 
 }
