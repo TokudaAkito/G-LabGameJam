@@ -26,7 +26,7 @@ public class EnemyMove : MonoBehaviour
     }
     private Vector3 moveRandomPosition()  // 目的地を生成、xとyのポジションをランダムに値を取得 
     {
-        Vector3 randomPosi = new Vector3(Random.Range( -_moveRange, _moveRange), enemy.transform.position.y); //()を微調整
+        Vector3 randomPosi = new Vector3(Random.Range( -_moveRange, _moveRange), enemy.transform.position.y); 
         return randomPosi;
     }
 }

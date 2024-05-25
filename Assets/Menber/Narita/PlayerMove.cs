@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.D) && this.transform.position.x < _maxrange)
         {
             transform.position += transform.right * _speed * Time.deltaTime;
-        }
+        } 
     }
 
     public void SpeedUp()

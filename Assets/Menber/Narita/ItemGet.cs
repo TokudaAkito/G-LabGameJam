@@ -7,13 +7,14 @@ public class ItemGet : MonoBehaviour
 {
     [SerializeField] float _speedUpTime;
     [SerializeField] float _speedUpTimer;
-
+    bullet bullet;
     PlayerMove playerMove;
     public int count = 0;
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
+        bullet = GetComponent<bullet>();
         playerMove = GetComponent<PlayerMove>();
     }
 
@@ -38,8 +39,6 @@ public class ItemGet : MonoBehaviour
         {
             GetSpeedUp();
            _speedUpTimer = 0;
-          
-
         }
         if (collision.gameObject.tag == "powerup")
         {
@@ -54,7 +53,6 @@ public class ItemGet : MonoBehaviour
         {
             Debug.Log("speedup");
             playerMove.SpeedUp();
-
         }
         void GetPowerUp()
         {
@@ -62,6 +60,7 @@ public class ItemGet : MonoBehaviour
         }
         void GetBullet()
         {
+            bullet.count2 = count;
             Debug.Log("bulletget");
             count++;
         }
