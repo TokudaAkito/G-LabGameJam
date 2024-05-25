@@ -11,6 +11,7 @@ public class SceneLoader : MonoBehaviour
     public static SceneLoader Instance => _instance;
 
     [SerializeField] private Image _image = null;
+    [SerializeField] private float FadeOutTime = 5;
 
     private void Awake()
     {
@@ -19,7 +20,7 @@ public class SceneLoader : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(WaitAndFadeOut(0, 2f));
+        StartCoroutine(WaitAndFadeOut(0, FadeOutTime));
     }
     private IEnumerator AlphaZeroToOne(float d, Action on_completed, bool isReversing = false)
     {
