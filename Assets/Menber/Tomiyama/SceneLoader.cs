@@ -37,7 +37,7 @@ public class SceneLoader : MonoBehaviour
             elapsedTime += Time.deltaTime;
             _image.color = color;
         }
-        _image.enabled = false;
+        if (isReversing == false) _image.enabled = false;
         if (on_completed != null) on_completed();
     }
 

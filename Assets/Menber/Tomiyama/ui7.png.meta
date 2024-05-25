@@ -105,7 +105,7 @@ TextureImporter:
         width: 1482
         height: 273
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -113,6 +113,48 @@ TextureImporter:
       bones: []
       spriteID: a88afbc7d9c087c41862c6daabca94cb
       internalID: 395101520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui7_1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1086
+        width: 572
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f5a7b5e9ee06046b25bd5aa6670a3a
+      internalID: -125117227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui7_2
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 2794
+        width: 1490
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3920b4b333951294386d868a50e0a521
+      internalID: 468748174
       vertices: []
       indices: 
       edges: []
@@ -129,6 +171,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       ui7_0: 395101520
+      ui7_1: -125117227
+      ui7_2: 468748174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
