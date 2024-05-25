@@ -5,9 +5,7 @@ using UnityEngine;
 public class meteo : MonoBehaviour
 {
     [SerializeField] float posy=-10;
-    // Start is called before the first frame update
-    [SerializeField] GameObject Player;
-    [SerializeField] PlayerScript pl;
+    [SerializeField] HealthSystem healthSystem;
     void Start()
     {
         
@@ -25,11 +23,11 @@ public class meteo : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            Destroy(this.gameObject);
-            //pl.HP--;
+
+            healthSystem.life--;
         }
-        //this.transform.position = Vector3.zero;
+        this.transform.position = Vector3.zero;
     }
 }
