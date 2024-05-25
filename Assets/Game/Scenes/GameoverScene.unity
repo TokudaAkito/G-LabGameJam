@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3402113567484182680, guid: 9ef6c33ae35c29e4482cb4e4784721cf, type: 3}
+      propertyPath: FadeOutTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4113857955149823466, guid: 9ef6c33ae35c29e4482cb4e4784721cf, type: 3}
       propertyPath: m_IsActive
       value: 1

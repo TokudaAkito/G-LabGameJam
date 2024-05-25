@@ -11,7 +11,7 @@ public class SceneLoader : MonoBehaviour
     public static SceneLoader Instance => _instance;
 
     [SerializeField] private Image _image = null;
-    [SerializeField] private float FadeOutTime = 5;
+    [SerializeField] private float FadeOutTime = 2;
 
     private void Awake()
     {
