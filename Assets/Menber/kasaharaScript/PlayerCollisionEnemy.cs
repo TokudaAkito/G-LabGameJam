@@ -10,8 +10,9 @@ public class PlayerCollisionEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Meteo" )
         {
-            player.life-- ;
+            //player.life-- ;
             Debug.Log("a");
+            player.Damage(1);
         }
         Debug.Log("col");
 

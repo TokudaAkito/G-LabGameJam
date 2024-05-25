@@ -27,9 +27,9 @@ public class meteo : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            
-            pl.HP--;
+            Destroy(this.gameObject);
+            //pl.HP--;
         }
-        this.transform.position = Vector3.zero;
+        //this.transform.position = Vector3.zero;
     }
 }
