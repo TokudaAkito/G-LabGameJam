@@ -35,7 +35,7 @@ public class BUlletMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-                 Destroy(this.gameObject); 
+                 Destroy(this.gameObject);
     }
-
+   
 }
