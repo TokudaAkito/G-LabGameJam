@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField] float initialhp;
+    [SerializeField] public float initialhp;
     Animator anim;
     public UnityEvent onDieCallback = new UnityEvent();
 

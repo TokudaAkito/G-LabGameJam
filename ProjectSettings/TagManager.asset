@@ -5,8 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - speedup
+<<<<<<< HEAD
   - powerup
   - bullet
+=======
+  - Meteo
+>>>>>>> 5078b9848e4063cc2d794fa4165710c0ca757e19
   layers:
   - Default
   - TransparentFX
