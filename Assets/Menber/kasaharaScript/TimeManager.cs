@@ -20,7 +20,8 @@ public class TimeManager : MonoBehaviour
         if (currentTime < 0 && !gameManager.GameOvered())
         {
             gameManager.Goal();
-            SceneManager.LoadScene("ClearScene");
+            //SceneManager.LoadScene("ClearScene");
+            SceneLoader.Instance.MoveToOtherScene("ClearScene");
         }
 
     }

@@ -36,7 +36,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameovered = true;
-        SceneManager.LoadScene("GameoverScene");
+        //SceneManager.LoadScene("GameoverScene");
+        SceneLoader.Instance.MoveToOtherScene("GameoverScene");
     }
 
     //@ƒQ[ƒ€‚ğI—¹‚µ‚½‚©‚Ç‚¤‚©
