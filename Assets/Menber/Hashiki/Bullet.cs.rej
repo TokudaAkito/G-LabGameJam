@@ -1,0 +1,10 @@
+diff a/Assets/Menber/Hashiki/Bullet.cs b/Assets/Menber/Hashiki/Bullet.cs	(rejected hunks)
+@@ -18,7 +18,7 @@
+     // Update is called once per frame
+     void Update()
+     {
+-        if (Input.GetMouseButtonDown(0))   //���N���b�N��Bullet��ˏo
++        if (Input.GetMouseButtonDown(0)||Input.GetKeyDown(KeyCode.Space))   //���N���b�N��Bullet��ˏo
+         {
+             var Bullet = GameObject.CreatePrimitive(PrimitiveType.Cylinder);   //�ˏo�����V�����_�[�eBullet
+             Bullet.transform.localScale = new Vector3(0.1F, 0.1F, 0.1F);
